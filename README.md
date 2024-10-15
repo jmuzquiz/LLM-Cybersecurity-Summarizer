@@ -142,6 +142,47 @@ I initially experimented with different approaches to extract and summarize arti
      - May encounter download errors (e.g., 403 Forbidden) for some URLs.
      - Limited control over the extraction process compared to Beautiful Soup.
 
+## Example Articles and Summaries
+
+*Note: The articles used for summarization were found by searching for "cybersecurity articles" on Google, ensuring a diverse range of topics and writing styles.*
+
+### Article 1: [Title of Article 1](URL)
+https://www.imf.org/external/pubs/ft/fandd/2021/03/global-cyber-threat-to-financial-systems-maurer.htm
+*Note: The following summaries are attempts to summarize the entire article, not just the excerpts below.*
+
+**Original Text Excerpt**:
+> [Insert a short excerpt of the original text, if necessary]
+
+**Beautiful Soup Summary**:
+> [Insert the summary output from the Beautiful Soup approach]
+
+**Newspaper3k Summary**:
+> [Insert the summary output from the Newspaper3k approach]
+
+---
+
+### Article 2: [Title of Article 2](URL)
+https://news.vt.edu/articles/2024/08/it-cybersecurity-protections-enhanced-2-factor.html
+*Note: The following summaries are attempts to summarize the entire article, not just the excerpts below.*
+
+**Original Text Excerpt**:
+> [Insert a short excerpt of the original text, if necessary]
+
+**Beautiful Soup Summary**:
+> [Insert the summary output from the Beautiful Soup approach]
+
+**Newspaper3k Summary**:
+> [Insert the summary output from the Newspaper3k approach]
+
+---
+3  https://www.ifac.org/knowledge-gateway/discussion/cybersecurity-critical-all-organizations-large-and-small
+4  https://news.vt.edu/articles/2024/10/cci-cyberarts-2024-exhibit.html
+5  https://www.propublica.org/article/cybersecurity-expert-finds-another-flaw-in-georgia-voter-portal
+### Additional Articles
+- [Title of Article 3](URL) - Beautiful Soup Summary: [Insert summary], Newspaper3k Summary: [Insert summary]
+- [Title of Article 4](URL) - Beautiful Soup Summary: [Insert summary], Newspaper3k Summary: [Insert summary]
+
+
 ## Limitations
 
 - **Data Extraction Failures**: The `newspaper` library may encounter issues with certain URLs, resulting in download failures (e.g., 403 Forbidden errors). This limits the range of articles that can be processed.
