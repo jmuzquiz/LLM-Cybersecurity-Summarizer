@@ -6,17 +6,21 @@
 2. [Introduction](#introduction)
 3. [Background](#background)
 4. [Technologies Used](#technologies-used)
-5. [Google Colab Notebook](#google-colab-notebook)
-6. [Installation](#installation)
-7. [Usage](#usage)
+5. [Installation](#installation)
+6. [Usage](#usage)
    - [Beautiful Soup Approach](#beautiful-soup-approach)
    - [Newspaper3k Approach](#newspaper3k-approach)
+7. [Google Colab Notebook](#google-colab-notebook)
 8. [Approaches Explored](#approaches-explored)
+   - [Article Extraction Approaches](#article-extraction-approaches)
+   - [Summarization Model Approaches](#summarization-model-approaches)
+   - [Final Decision](#final-decision)
 9. [Challenges Encountered](#challenges-encountered)
 10. [Example Articles and Summaries](#example-articles-and-summaries)
 11. [Limitations](#limitations)
 12. [Conclusions](#conclusions)
 13. [Future Work](#future-work)
+
 
 ## Project Overview
 
@@ -36,19 +40,19 @@ The growth of digital content has made it increasingly important to have tools t
 - **Requests**: Employed to fetch the content of web pages for scraping.
 - **NLTK**: Used for tokenization tasks, particularly for processing text data.
 - **Hugging Face Transformers**: Implemented for various summarization models.
-- **Google Colab** used for development and testing, jupyter notebook idk
+- **Google Colab** Cloud-based platform used for development and testing, with full support for Jupyter notebooks.
 
-## Google Colab Notebook *update toc
+## Google Colab Notebook
 
-You can view and run the project in the Google Colab notebook [here](<your_colab_link>).
+You can view and run the project in the Google Colab notebook [here](<your_colab_link>).*
 
-## Installation *is this okay
-To set up the project, you will need to install the required libraries.
+## Installation
+To run this project in Google Colab, install the necessary libraries by running the following command:
 
 ```python
 !pip install requests beautifulsoup4 transformers newspaper3k nltk
 ```
-## Usage *mention imf code difference somewhere
+## Usage
 
 ### Beautiful Soup Approach
 
@@ -170,49 +174,58 @@ if __name__ == "__main__":
     # Call the function to extract and display the article's information
     extract_article_info(url)
 ```
-## Approaches Explored *fix both
-
-I experimented with multiple summarization models using Hugging Face's `transformers` library to achieve the best summarization quality:
-
-### 1. `facebook/bart-large-cnn`
-   - **Description**: A large pre-trained abstractive summarization model trained on the CNN/Daily Mail dataset, capable of generating human-readable summaries.
-   - **Pros**:
-     - Effective at summarizing short articles and concise sections.
-     - Captured key ideas well in shorter sections.
-   - **Cons**:
-     - Struggled to maintain coherence when summarizing longer articles or large chunks of text.
-     - Execution time increased with the length of the article.
-  
-### 2. `sshleifer/distilbart-cnn-12-6`
-   - **Description**: A distilled version of the BART model, designed for faster inference while maintaining reasonable summarization accuracy.
-   - **Pros**:
-     - Faster execution, with summaries produced in significantly less time than the full BART model.
-     - Suitable for medium-length articles with moderate complexity.
-   - **Cons**:
-     - Less comprehensive summaries compared to the full BART model.
-     - Occasionally missed key details in longer or more complex articles.
-
 ## Approaches Explored
 
-I initially experimented with different approaches to extract and summarize article content. The two primary approaches that proved most effective are:
+Throughout the project, I experimented with both article extraction methods and summarization models to optimize the quality and efficiency of the summarization process.
+
+### Article Extraction Approaches
 
 1. **Beautiful Soup for Web Scraping**:
+   - **Description**: Custom web scraping approach using Beautiful Soup to extract specific HTML elements.
    - **Pros**:
-     - Flexibility in extracting specific HTML elements.
-     - Useful for custom web scraping tasks.
+     - Flexibility in extracting specific content from a variety of website structures.
+     - Useful for handling complex web pages with custom parsing.
+     - Typically produces fewer grammatical issues in the extracted content.
    - **Cons**:
-     - Slower execution time (averaged around 4 minutes for longer articles).
-     - Captured only the introduction or first few paragraphs of longer articles.
-     - Requires additional parsing logic for different website structures.
+     - Slower execution time (averaging around 4 minutes for longer articles).
+     - Captured only the introduction or first few paragraphs in most cases.
+     - Requires additional logic for handling different website structures.
 
 2. **Newspaper3k for Article Extraction**:
+   - **Description**: A library specifically designed for fast and efficient article extraction, with built-in NLP capabilities.
    - **Pros**:
-     - Quick and efficient (typically under 20 seconds).
-     - Automatically handles various article formats and provides built-in NLP features.
-     - Consistently summarizes about 75% of longer articles.
+     - Quick and efficient extraction (typically under 20 seconds).
+     - Automatically handles various article formats and includes built-in NLP features.
+     - Produces summaries that sound more natural and closer to human speech.
+     - Extracts and summarizes around 75% of the content from longer articles.
    - **Cons**:
-     - May encounter download errors (e.g., 403 Forbidden) for some URLs.
-     - Limited control over the extraction process compared to Beautiful Soup.
+     - May encounter download errors, such as 403 Forbidden for certain URLs.
+     - Less control over the extraction process compared to custom web scraping.
+     - Tends to generate more grammatical errors in the extracted content.
+
+### Summarization Model Approaches
+
+1. **`facebook/bart-large-cnn`**:
+   - **Description**: A pre-trained abstractive summarization model trained on the CNN/Daily Mail dataset.
+   - **Pros**:
+     - Generates human-readable summaries and effectively captures key ideas in shorter sections.
+     - Capable of summarizing complex content with good accuracy.
+   - **Cons**:
+     - Struggles with maintaining coherence for longer articles or larger chunks of text.
+     - Slower execution, especially as the article length increases.
+
+2. **`sshleifer/distilbart-cnn-12-6`**:
+   - **Description**: A distilled version of the BART model, optimized for faster inference.
+   - **Pros**:
+     - Faster execution times, making it ideal for quick summarization.
+     - Suitable for medium-length articles with moderate complexity.
+   - **Cons**:
+     - Tended to paraphrase the entire article rather than producing concise summaries, often resulting in summaries nearly as long as the original text.
+     - Occasionally misses key details in longer or more complex articles.
+
+### Final Decision
+
+Although I experimented with the `sshleifer/distilbart-cnn-12-6` model, I ultimately selected the `facebook/bart-large-cnn` model for the final implementation due to its superior summarization quality and its ability to generate concise summaries. I encountered issues with the sshleifer model, as it tended to paraphrase the entire article, resulting in summaries that were nearly as long as the original text. For article extraction, I utilized both Beautiful Soup and Newspaper3k to showcase the differences in quality and speed.
     
 ## Challenges Encountered
 
@@ -222,6 +235,7 @@ During the development of this project, I faced several challenges, including:
 - **Ambiguity in Pronouns**: Summarization occasionally referenced vague pronouns (e.g., "he" or "they") without sufficient context, making it unclear who was being discussed.
 - **Tense Discrepancies**: Some extracted text had inconsistent verb tenses, leading to confusion in the summarization output.
 - **Chunking Sensitivity**: While trying different models, I found that chunking was sensitive; one early attempt summarized a whole 10-minute read article into one sentence, while another just paraphrased the whole thing. I had to try many different methods to get anywhere near a 4-5 sentence summary.
+- **Website-Related Content**: At times, the summarization models attempted to summarize content that was more related to the website itself rather than the article's core message. For example, one summary began with a sentence about "The IMF Press Center is a password-protected site for working journalists," which was not relevant to the actual article content.
 
 ## Example Articles and Summaries
 
