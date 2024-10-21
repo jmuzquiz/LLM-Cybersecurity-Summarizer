@@ -247,89 +247,6 @@ During the development of this project, I faced several challenges, including:
 
 ## Example Articles and Summaries
 
-*Note: The articles used for summarization were found by searching for "cybersecurity articles" on Google, ensuring a diverse range of topics and writing styles.*
-
-### Article 1: [The Global Cyber Threat](https://www.imf.org/external/pubs/ft/fandd/2021/03/global-cyber-threat-to-financial-systems-maurer.htm)
-*Note: The following summaries are attempts to summarize the entire article, not just the excerpts below.*
-
-**Original Text Excerpt**:
-> [Cyber threats to the financial system are growing, and the global community must cooperate to protect it
-
-In February 2016, hackers targeted the central bank of Bangladesh and exploited vulnerabilities in SWIFT, the global financial system’s main electronic payment messaging system, trying to steal $1 billion. While most transactions were blocked, $101 million still disappeared. The heist was a wake-up call for the finance world that systemic cyber risks in the financial system had been severely underestimated.]
-> 
-
-**Beautiful Soup Summary**:
-> [Insert the summary output from the Beautiful Soup approach]
-> The IMF Press Center is a password-protected site for working journalists.
-Cyber threats to the financial system are growing, and the global community must cooperate to protect it.
-In February 2016, hackers targeted the central bank of Bangladesh and exploited vulnerabilities in SWIFT.
-The world’s governments and companies continue to struggle to contain the threat.
-It remains unclear who is responsible for protecting the system.
-
-**Newspaper3k Summary**:
-> [Insert the summary output from the Newspaper3k approach]
-> First, the global financial system is going through an unprecedented digital transformation, which is being accelerated by the COVID-19 pandemic.
-Second, malicious actors are taking advantage of this digital transformation and pose a growing threat to the global financial system, financial stability, and confidence in the integrity of the system.
-Although they do advance financial inclusion, digital financial services also offer a target-rich environment for hackers.
-Better protecting the global financial system is primarily an organizational challenge.
-This responsibility gap and continued uncertainty about roles and mandates to protect the global financial system fuel risks.
-
----
-
-### Article 2: [Cybersecurity protection thwarts sophisticated attack; additional safeguards under consideration](https://news.vt.edu/articles/2024/08/it-cybersecurity-protections-enhanced-2-factor.html)
-*Note: The following summaries are attempts to summarize the entire article, not just the excerpts below.*
-
-**Original Text Excerpt**:
-> [Insert a short excerpt of the original text, if necessary]
-> In July, a wave of phishing emails targeting Virginia Tech employees attempted to — and nearly succeeded in — diverting direct deposits, including pay, away from their legitimate destination.
-
-Here’s what happened: 
-
-Employees received phishing emails urging them to log into a well-disguised fake login screen. If a user responded, the hackers had that employee's username and password.
-The hackers then attempted to log into the user’s Virginia Tech email, prompting a Duo authentication request. If the user initially denied this request, the hackers kept trying until the user approved one, a tactic known as "2-factor fatigue."
-
-**Beautiful Soup Summary**:
-> [Insert the summary output from the Beautiful Soup approach]
-> A wave of phishing emails targeting Virginia Tech employees attempted to diverting direct deposits, including pay, away from their legitimate destination.
-Fortunately, newly deployed cybersecurity protections within the Division of Information Technology detected the unusual login activity and put a stop to the hack.
-Hackers are getting better at what they do, and they are studying our business processes to find vulnerabilities.
-Each member of the university community has a role to play in staying safe online.
-"We must continue to find ways to shore up cyber defenses, to include a more informed and security-aware community," he says.
-
-**Newspaper3k Summary**:
-> [Insert the summary output from the Newspaper3k approach]
-> An error occurred: Article `download()` failed with 403 Client Error: Forbidden for url: https://news.vt.edu/articles/2024/08/it-cybersecurity-protections-enhanced-2-factor.html on URL https://news.vt.edu/articles/2024/08/it-cybersecurity-protections-enhanced-2-factor.html
-
----
-
-### Additional Articles
-- [Cybersecurity Is Critical for all Organizations – Large and Small](https://www.ifac.org/knowledge-gateway/discussion/cybersecurity-critical-all-organizations-large-and-small) - Beautiful Soup Summary: [Insert summary] Cybercrime is becoming big business and cyber risk a focus of organizations and governments globally.
-Monetary and reputational risks are high if organizations don’t have an appropriate cybersecurity plan.
-Cyber-attacks have been steadily climbing for four consecutive years.
-The manufacturing sector experienced the greatest proportion of cyber-attacks in 2022.
-Recent cases have involved thefts of sensitive information., Newspaper3k Summary: [Insert summary] Cybersecurity is making sure your organization's data is safe from attacks from both internal and external bad actors.
-Once infected, the organization’s data continues to be inaccessible as the encrypts the data using the attackers encryption key.
-Cybersecurity GovernanceA cybersecurity governance and risk management program should be established which is appropriate for the size of the organization.
-Cybersecurity risk needs to be considered as a significant business risk by the owners and directors.
-Reporting of any possible breach of security, unauthorized access, or disclosure of the organizations data.
-- [Explore cybersecurity through art at new exhibition](https://news.vt.edu/articles/2024/10/cci-cyberarts-2024-exhibit.html) - Beautiful Soup Summary: [Insert summary] CyberArts 2024 opens at the Torpedo Factory Art Center in Alexandria.
-The opening reception will be held on Oct.
-18 from 6-8 p.
-m.
-Registration is required., Newspaper3k Summary: [Insert summary] An error occurred: Article `download()` failed with 403 Client Error: Forbidden for url: https://news.vt.edu/articles/2024/10/cci-cyberarts-2024-exhibit.html on URL https://news.vt.edu/articles/2024/10/cci-cyberarts-2024-exhibit.html
-- [“A Terrible Vulnerability”: Cybersecurity Researcher Discovers Yet Another Flaw in Georgia’s Voter Cancellation Portal](https://www.propublica.org/article/cybersecurity-expert-finds-another-flaw-in-georgia-voter-portal) - Beautiful Soup Summary: [Insert summary] Until Monday, a new online portal run by the Georgia Secretary of State’s Office contained what experts describe as a serious security vulnerability.
-The flaw was brought to the attention of ProPublica and Atlanta News First over the weekend.
-The issue was “as bad as any voter cancellation bug could be,” a cybersecurity researcher says.
-The Georgia Secretary of State’s Office said it had no records of Parker's attempts to reach out.
-The Secretary of State’s Office told the news organizations that it quickly fixed the portal., Newspaper3k Summary: [Insert summary] Parker, who uses they/them pronouns, said that after discovering it, they attempted to contact the Georgia Secretary of State’s Office.
-The Secretary of State’s Office told the news organizations that it quickly fixed the portal.
-This one would allow any user of the portal to bypass the screen that requires a driver’s license number and submit the cancellation request without it.
-A window popped up stating that “Your cancellation request has been successfully submitted” and that county election workers would process the request within a week.
-(Parker’s cancellation request would have lacked a driver’s license number.)
-
-888
-## Example Articles and Summaries
-
 *Note: The articles used for summarization were found by searching for "cybersecurity articles" on Google, ensuring a diverse range of topics and writing styles. The following summaries are attempts to summarize the entire article, not just the excerpts below.*
 
 ### Article 1: [The Global Cyber Threat](https://www.imf.org/external/pubs/ft/fandd/2021/03/global-cyber-threat-to-financial-systems-maurer.htm)
@@ -345,7 +262,7 @@ Cyber threats to the financial system are growing, and the global community must
 In February 2016, hackers targeted the central bank of Bangladesh and exploited vulnerabilities in SWIFT.
 The world’s governments and companies continue to struggle to contain the threat.
 It remains unclear who is responsible for protecting the system.
-  > *Note: The first sentence indicates that some extraneous content from the website may be included in the article summaries.
+  > *Note: The first sentence exemplifies how some extraneous content from the website may be included in the article summaries.
 
 - **Newspaper3k Summary:**
   > First, the global financial system is going through an unprecedented digital transformation, which is being accelerated by the COVID-19 pandemic.
@@ -391,20 +308,33 @@ Once infected, the organization’s data continues to be inaccessible as the enc
 Cybersecurity GovernanceA cybersecurity governance and risk management program should be established which is appropriate for the size of the organization.
 Cybersecurity risk needs to be considered as a significant business risk by the owners and directors.
 Reporting of any possible breach of security, unauthorized access, or disclosure of the organizations data.
-     > *The summary above demonstrates some grammatical issues that can arise with the Newspaper3k approach, highlighting a known limitation.*
+     > *This summary demonstrates some grammatical issues that can arise with the Newspaper3k approach, highlighting a known limitation.*
 
-2. **[Explore Cybersecurity Through Art at New Exhibition](https://news.vt.edu/articles/2024/10/cci-cyberarts-2024-exhibit.html)** fix
+2. **[Explore Cybersecurity Through Art at New Exhibition](https://news.vt.edu/articles/2024/10/cci-cyberarts-2024-exhibit.html)** 
    - **Beautiful Soup Summary:**
-     > CyberArts 2024 opens at the Torpedo Factory Art Center in Alexandria on Oct. 18 from 6-8 p.m. Registration is required.
+     > CyberArts 2024 opens at the Torpedo Factory Art Center in Alexandria.
+The opening reception will be held on Oct.
+18 from 6-8 p.
+m.
+Registration is required.
    - **Newspaper3k Summary:**
-     > An error occurred: Article `download()` failed with 403 Client Error: Forbidden for the article URL.
+     > *An error occurred while attempting to summarize this article: 403 Client Error: Forbidden for the article URL.* 
+     > *This again illustrates a limitation of the `newspaper` library, which can sometimes fail to retrieve articles despite its faster processing time compared to Beautiful Soup.*
 
 3. **[“A Terrible Vulnerability”: Cybersecurity Researcher Discovers Yet Another Flaw in Georgia’s Voter Cancellation Portal](https://www.propublica.org/article/cybersecurity-expert-finds-another-flaw-in-georgia-voter-portal)** fix
    - **Beautiful Soup Summary:**
-     > A serious security vulnerability was found in Georgia's new online voter cancellation portal. The flaw allowed users to bypass essential security checks, raising concerns about voter data security.
+     > Until Monday, a new online portal run by the Georgia Secretary of State’s Office contained what experts describe as a serious security vulnerability.
+The flaw was brought to the attention of ProPublica and Atlanta News First over the weekend.
+The issue was “as bad as any voter cancellation bug could be,” a cybersecurity researcher says.
+The Georgia Secretary of State’s Office said it had no records of Parker's attempts to reach out.
+The Secretary of State’s Office told the news organizations that it quickly fixed the portal.
    - **Newspaper3k Summary:**
-     > After discovering the flaw, the researcher contacted the Georgia Secretary of State's Office, which fixed the portal quickly. The issue allowed requests to be submitted without required identification.
-
+     > Parker, who uses they/them pronouns, said that after discovering it, they attempted to contact the Georgia Secretary of State’s Office.
+The Secretary of State’s Office told the news organizations that it quickly fixed the portal.
+This one would allow any user of the portal to bypass the screen that requires a driver’s license number and submit the cancellation request without it.
+A window popped up stating that “Your cancellation request has been successfully submitted” and that county election workers would process the request within a week.
+(Parker’s cancellation request would have lacked a driver’s license number.)
+     > *Note: This summary demonstrates a pronoun reference issue, which is a common problem when using automated summarization tools like Newspaper3k. The pronoun "it" in the first sentence lacks a clear antecedent, making it unclear what Parker discovered. A more explicit reference would improve clarity (e.g., "Parker discovered a flaw in the voter cancellation portal").*
 
 ## Limitations
 
