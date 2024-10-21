@@ -1,4 +1,3 @@
-# In Progress
 # LLM Cybersecurity Article Summarizer
 
 ## Table of Contents
@@ -46,7 +45,7 @@ The growth of digital content has made it increasingly important to have tools t
 
 ## Google Colab Notebook
 
-You can view and run the project in the Google Colab notebook [here](<your_colab_link>).*
+You can view and run the project in the Google Colab notebook [here](https://colab.research.google.com/drive/1K-4ToaPsF24k0qBqEv6p03wkYO4FECYT?usp=sharing).*
 
 ## Installation
 To run this project in Google Colab, install the necessary libraries by running the following command:
