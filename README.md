@@ -5,11 +5,11 @@
 2. [Introduction](#introduction)
 3. [Background](#background)
 4. [Technologies Used](#technologies-used)
-5. [Installation](#installation)
-6. [Usage](#usage)
+5. [Google Colab Notebook](#google-colab-notebook)
+6. [Installation](#installation)
+7. [Usage](#usage)
    - [Beautiful Soup Approach](#beautiful-soup-approach)
    - [Newspaper3k Approach](#newspaper3k-approach)
-7. [Google Colab Notebook](#google-colab-notebook)
 8. [Approaches Explored](#approaches-explored)
    - [Article Extraction Approaches](#article-extraction-approaches)
    - [Summarization Model Approaches](#summarization-model-approaches)
@@ -19,7 +19,6 @@
 11. [Limitations](#limitations)
 12. [Conclusions](#conclusions)
 13. [Future Work](#future-work)
-
 
 ## Project Overview
 
