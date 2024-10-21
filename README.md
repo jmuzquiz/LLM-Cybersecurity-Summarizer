@@ -226,7 +226,7 @@ Throughout the project, I experimented with both article extraction methods and 
      - Faster execution times, making it ideal for quick summarization.
      - Suitable for medium-length articles with moderate complexity.
    - **Cons**:
-     - Tended to paraphrase the entire article rather than producing concise summaries, often resulting in summaries nearly as long as the original text.
+     - Tends to paraphrase the entire article rather than producing concise summaries, often resulting in summaries nearly as long as the original text.
      - Occasionally misses key details in longer or more complex articles.
 
 ### Final Decision
@@ -342,8 +342,11 @@ A window popped up stating that “Your cancellation request has been successful
 - **Limited Context**: The summarizer may struggle with maintaining context across large chunks of text, potentially resulting in summaries that lack coherence or fail to convey the main ideas accurately.
 
 ## Conclusions
+This project successfully demonstrates the ability to extract and summarize articles related to cybersecurity using large language models. Two different methods were explored for article extraction: Beautiful Soup and Newspaper. While both methods performed effectively in many cases, they each had distinct advantages and trade-offs.
 
-This project successfully demonstrates the ability to extract and summarize articles related to cybersecurity using large language models. By leveraging the `newspaper` library for article extraction and the `transformers` library for summarization, the application efficiently processes online content, providing concise and relevant summaries. The results indicate that while the tool is effective for many articles, there are areas for improvement, particularly in handling longer texts and ensuring comprehensive summaries.
+The Beautiful Soup method allowed for more customization and control over the extraction process but required more effort in parsing and handling complex website structures. On the other hand, the Newspaper library provided a more streamlined and faster approach but occasionally encountered issues, such as errors when processing certain articles, impacting its reliability.
+
+For summarization, the transformers library was used to generate concise and relevant summaries. However, handling longer texts and ensuring comprehensive summaries remain areas for improvement. Despite these challenges, the project successfully showcases the potential of combining article extraction and summarization techniques for efficiently processing online content.
 
 ## Future Work
 
